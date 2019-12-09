@@ -17,8 +17,6 @@ def part_2(input_data, desired_value):
             input_data[1] = i
             input_data[2] = j
             output = int_comp.run_program(input_data)
-            if output != 4023471:
-                print('debug')
             if output == desired_value:
                 return 100 * i + j
 
@@ -30,4 +28,3 @@ if __name__ == '__main__':
 
     part_1_result = part_1(int_data)
     part_2_result = part_2(int_data, 19690720)
-    print('debug')

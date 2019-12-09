@@ -6,7 +6,7 @@ class IntcodeComputer(object):
     def run_program(self, program=None):
         if program is None:
             program = list(self.memory)
-        self.cache = program
+        self.cache = list(program)
         for i in range(0, len(self.cache) - 1, 4):
             case = self.cache[i]
             if case == 99:
